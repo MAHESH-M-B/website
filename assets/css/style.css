@@ -1,0 +1,314 @@
+* {
+  padding: 0px;
+  margin: 0px !important;
+  font-family: roboto-mono;
+  border: none;
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  background: var(--primary) !important;
+  color: var(--text) !important;
+}
+
+/* --------Font-------- */
+
+@font-face {
+  font-family: roboto-mono;
+  src: url(../font/RobotoMono-VariableFont_wght.ttf);
+  font-weight: normal;
+}
+
+/* --------Scroll Bar-------- */
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) transparent;
+  border-radius: 15px;
+}
+
+html::-webkit-scrollbar {
+  width: 1vw;
+  border-radius: 15px;
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 15px;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: var(--tertiary);
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* --------Background-------- */
+
+.background {
+  background: -moz-linear-gradient(90deg, #002853 0%, #040c18 100%);
+
+  background: -webkit-linear-gradient(90deg, #002853 0%, #040c18 100%);
+
+  background: -o-linear-gradient(90deg, #002853 0%, #040c18 100%);
+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#040C18', endColorstr='#002853', GradientType=0 );
+
+  background: -ms-linear-gradient(90deg, #002853 0%, #040c18 100%);
+
+  background: linear-gradient(90deg, #002853 0%, #040c18 100%);
+}
+
+/* --------Text-------- */
+
+.gradient-text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+}
+
+.header-text {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.font-size {
+  font-size: 240px;
+}
+
+.navbar a h1 {
+  font-size: 40px;
+}
+
+/* --------Center-------- */
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --------Paddings and Margins-------- */
+
+.padding-top {
+  padding-top: 205px;
+}
+.margin-top {
+  margin-top: 50px !important;
+}
+.padding-bottom {
+  padding-bottom: 207.5px;
+}
+.contact-padding {
+  padding: 20px;
+}
+
+/*--------Buttons-------- */
+
+.outlined-button {
+  color: var(--text);
+  border: 1px solid var(--text);
+  border-radius: 10px;
+  padding: 7.5px 15px;
+  text-decoration: none;
+  background: transparent;
+  text-align: center;
+}
+
+.outlined-button:hover {
+  transition: 0.5s ease-in-out;
+  background-color: var(--text);
+  color: var(--primary);
+}
+.button {
+  color: var(--primary);
+  border: 1px solid var(--text);
+  border-radius: 10px;
+  padding: 7.5px 15px;
+  text-decoration: none;
+  background: var(--text);
+  text-align: center;
+}
+
+.button:hover {
+  transition: 0.5s ease-in-out;
+  background-color: transparent;
+  color: var(--text);
+}
+
+/* --------Outline-------- */
+
+.outline {
+  padding: 20px;
+  margin: 10px !important;
+  border: 1px solid var(--text);
+  border-radius: 10px;
+}
+
+/* --------Input-------- */
+
+.input {
+  border-radius: 10px;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: row;
+  border: var(--text) 1px solid;
+}
+
+.input input {
+  background: transparent;
+  width: 100%;
+  margin-left: 10px;
+  color: var(--text);
+}
+.input input::placeholder {
+  color: var(--text);
+}
+
+.input textarea {
+  border: none;
+  background: transparent;
+  width: 100%;
+  margin-left: 10px;
+  color: var(--text);
+}
+.input textarea::-webkit-scrollbar {
+  width: 1vw;
+  border-radius: 15px;
+}
+.input textarea::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 15px;
+}
+.input textarea::-webkit-scrollbar-thumb:hover {
+  background: var(--tertiary);
+}
+.input textarea::-webkit-scrollbar-track {
+  background: transparent;
+}
+.input i {
+  margin-top: 3px !important;
+}
+
+/* --------Links-------- */
+
+.links a:hover {
+  color: var(--hover) !important;
+}
+
+/* --------Media Queries-------- */
+
+@media screen and (max-width: 991px) {
+  .about {
+    text-align: center;
+  }
+  .about-logo {
+    display: none;
+  }
+  .padding-top {
+    padding-top: 125px;
+  }
+  .padding-bottom {
+    padding-bottom: 75px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar {
+    padding-left: 10px;
+  }
+  .font-size {
+    font-size: 140px;
+  }
+  .header-text {
+    font-size: 30px;
+  }
+  .contact-padding {
+    padding: 10px;
+  }
+  .footer h1 {
+    font-size: 10px !important;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .navbar a h1 {
+    font-size: 25px;
+  }
+  .outline {
+    padding: 8px;
+  }
+  .outlined-button {
+    padding: 5px 10px;
+  }
+  .input input,
+  .input textarea,
+  .input input::placeholder,
+  .input textarea::placeholder {
+    font-size: 10px !important;
+  }
+}
+
+/* --------Menu-------- */
+
+.menu {
+  width: 475px;
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translate(-50%);
+  background: var(--translucent);
+  border-radius: 4rem;
+  padding: 5px 2.25rem;
+  backdrop-filter: blur(15px);
+}
+
+.menu-items {
+  padding: 0.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu-items a {
+  text-decoration: none;
+  font-size: 12.5px;
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-items a:hover {
+  background: var(--text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 500px) {
+  .menu {
+    padding: 15px 1rem;
+    width: 95%;
+  }
+  .menu-items {
+    padding: 0.1rem;
+  }
+  .menu-items a {
+    text-decoration: none;
+    font-size: 7.5px;
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .menu {
+    display: none;
+  }
+}
