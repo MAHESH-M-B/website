@@ -1,4 +1,4 @@
-    (document).ready(function(){
+
 // typing text animation script
     var typed = new Typed(".typing", {
         strings: ["FullStack Developer ", " Web Developer", "Freelancer",],
@@ -16,7 +16,7 @@
 
 
 
-    })
+
 
 
 
